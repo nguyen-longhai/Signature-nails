@@ -11,6 +11,7 @@ A website I made for a local NZ business located in Remuera, Auckland NZ called 
 - Footer
 - Quality adjustments
 - Accessibility concerns
+- Dynamic layouts for different orientations
 
 ## Location
 
