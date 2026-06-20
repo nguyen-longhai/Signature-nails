@@ -1,0 +1,60 @@
+.grid {
+  display: grid;
+}
+
+.priceText {
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.serviceSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 4rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 4rem 0rem 3rem 0rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.1px solid black;
+}
+
+h4 {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+#services,
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#services {
+  background-color: #ffffff;
+}
+
+.serviceContainer {
+  width: 90%;
+  padding-bottom: 5rem;
+}
+
+.priceText p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.servicesItem {
+  width: 100%;
+}

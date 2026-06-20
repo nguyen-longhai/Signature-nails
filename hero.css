@@ -1,0 +1,80 @@
+/* HERO LAYOUT ------------------------------------ */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9eff1;
+  gap: 4rem;
+}
+
+.heroLeft {
+  width: 50vw;
+}
+
+/* HERO IMAGE ------------------------------------- */
+.heroRight {
+  width: 35vw;
+  max-width: 480px;
+  overflow: hidden;
+  border-radius: 0.7rem;
+}
+
+.heroRight img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* FONTS AND TYPOGRAPHY -----------------------------*/
+.hero h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* BUTTONS ----------------------------------------- */
+.heroActions {
+  margin-top: 3rem;
+}
+
+.heroActions .btnPrimary {
+  margin-right: 2rem;
+}
+
+.btn {
+  font-size: 1.1rem;
+}
+
+.btnPrimary {
+  background-color: #ffb7cd;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+  transition: background-color 0.12s ease-in-out;
+}
+
+.btnPrimary:hover {
+  background-color: #df98ad;
+  color: black;
+}
+
+.btnOutline {
+  border-bottom: 1px solid #f9eff1;
+  transition:
+    border-bottom 0.12s ease-in-out,
+    color 0.12s ease-in-out;
+}
+
+.btnOutline:hover {
+  border-bottom: 1px solid black;
+}
+
+/* LINKS ------------------------------------------------- */
+a:hover {
+  color: #6d3949;
+}
