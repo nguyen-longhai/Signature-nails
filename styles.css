@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   color: #0a021c;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -10,58 +14,7 @@ a {
   transition: color 0.12s ease-in-out;
 }
 
-nav {
-  width: 100%;
-  height: 98px;
-  background-color: #ffdbe4;
-  display: flex;
-  justify-content: center;
-
-  position: fixed;
-}
-
-.logo {
-  height: 6rem;
-  justify-self: center;
-}
-
-.navContainer {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  padding-left: 10vw;
-  width: 65vw;
-}
-
-/*Links of navigation bar, excluding the call to action*/
-.navLinks {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  place-items: center;
-
-  list-style: none;
-  text-decoration: none;
-  padding-right: 30px;
-}
-
-.navRight {
-  display: flex;
-  justify-content: flex-end;
-  width: 45vw;
-}
-
-.navCallToAction {
-  align-self: center;
-  justify-self: flex-end;
-
-  background-color: #ffb7cd;
-  padding: 0.7rem;
-  border-radius: 0.7rem;
-
-  transition: background-color 0.12s ease-in-out;
-}
-
-.navCallToAction:hover {
-  background-color: #ca8ea0cb;
-  color: black;
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: 0.8rem;
 }

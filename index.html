@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signature Nails - Color Your Life, Lift Your Spirits</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="hero.css" />
     <link rel="stylesheet" href="services.css" />
     <link rel="stylesheet" href="about.css" />
@@ -12,7 +13,9 @@
   <body>
     <nav>
       <div class="navContainer">
-        <img src="images/logo.png" alt="Signature Nails Logo" class="logo" />
+        <a href="#heroSection">
+          <img src="images/logo.png" alt="Signature Nails Logo" class="logo" />
+        </a>
         <div class="navRight">
           <ul class="navLinks">
             <li><a href="#services">SERVICES</a></li>
@@ -25,7 +28,7 @@
       </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="heroSection">
       <div class="heroLeft">
         <a class="heroLocation" href="https://maps.app.goo.gl/KwawrE2MGGEycXS8A"
           >📍 616 Remuera, Auckland</a
@@ -362,9 +365,13 @@
 
     <section id="about">
       <h2>Hello!</h2>
-      <div>
-        We are a nail shop in Remuera, Auckland that provides nail, wax, tinting
-        and power services
+      <div class="aboutBlock">
+        <h3>We are a women-owned nail salon based at Remuera, Auckland.</h3>
+        <img
+          src="images/Nail_product 1png.png"
+          alt="Nail being done"
+          class="aboutImg"
+        />
       </div>
     </section>
 

@@ -1,4 +1,13 @@
 #about {
-  height: 100vh;
   background-color: #f9eff1;
+}
+
+.aboutBlock {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutImg {
+  width: 20vw;
 }

@@ -1,0 +1,56 @@
+nav {
+  width: 100%;
+  height: 5.5rem;
+  background-color: #ffdbe4;
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+}
+
+.logo {
+  height: 10rem;
+  transform: translate(-2rem, -2rem);
+  justify-self: center;
+}
+
+.navContainer {
+  display: flex;
+  width: 85vw;
+  justify-content: space-around;
+}
+
+/*Links of navigation bar, excluding the call to action*/
+.navLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 20px;
+  place-items: center;
+
+  list-style: none;
+  text-decoration: none;
+}
+
+.navRight {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 45vw;
+}
+
+.navCallToAction {
+  align-self: center;
+  justify-self: flex-end;
+
+  background-color: #ffb7cd;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+
+  transition: background-color 0.12s ease-in-out;
+}
+
+.navCallToAction:hover {
+  background-color: #ca8ea0cb;
+  color: black;
+}
