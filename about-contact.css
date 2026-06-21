@@ -1,13 +1,19 @@
 #about {
   background-color: #f9eff1;
+  height: 60vh;
 }
 
 .aboutBlock {
   width: 80vw;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .aboutImg {
   width: 20vw;
+}
+
+.aboutText {
+  width: 50vw;
 }
