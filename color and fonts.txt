@@ -1,1 +1,23 @@
-#ffdbe4
+#ffe6ed
+#ffb7cd
+#df98ad
+
+Captions / Small text: 0.875rem
+Default Body text: 1rem
+Sub-headings / H4: 1.25rem
+Section headers / H3: 1.5rem
+Page sub-titles / H2: 2rem
+Main page title / H1: 2.5rem
+
+Gaps
+4px: 0.25rem
+8px: 0.5rem
+16px: 1rem
+24px: 1.5rem
+32px: 2rem
+48px: 3rem
+64px: 4rem
+
+line heights
+1.2
+1.6

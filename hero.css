@@ -1,11 +1,17 @@
 /* HERO LAYOUT ------------------------------------ */
 .hero {
+  width: 90vw;
+  height: 91vh;
+  margin: auto;
+  padding: 2rem 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #f9eff1;
-  gap: 4rem;
+  transform: translate(0, -5%);
+
+  background-color: #ffe6ed;
+  gap: 3rem;
 }
 
 .heroLeft {
@@ -15,9 +21,9 @@
 /* HERO IMAGE ------------------------------------- */
 .heroRight {
   width: 35vw;
-  max-width: 480px;
+  max-width: 30rem;
   overflow: hidden;
-  border-radius: 0.7rem;
+  border-radius: 1rem;
 }
 
 .heroRight img {
@@ -29,13 +35,8 @@
 
 /* FONTS AND TYPOGRAPHY -----------------------------*/
 .hero h1 {
-  font-size: 3.5rem;
-  line-height: 1.2;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 3.125rem;
+  margin: 1rem 0 1rem 0;
 }
 
 /* BUTTONS ----------------------------------------- */
@@ -48,14 +49,14 @@
 }
 
 .btn {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
 }
 
 .btnPrimary {
   background-color: #ffb7cd;
-  padding: 0.7rem;
-  border-radius: 0.7rem;
-  transition: background-color 0.12s ease-in-out;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: background-color 0.1s ease-in-out;
 }
 
 .btnPrimary:hover {
@@ -64,17 +65,17 @@
 }
 
 .btnOutline {
-  border-bottom: 1px solid #f9eff1;
+  border-bottom: 0.1px solid #f9eff1;
   transition:
-    border-bottom 0.12s ease-in-out,
-    color 0.12s ease-in-out;
+    border-bottom 0.3s ease-in-out,
+    color 0.1s ease-in-out;
 }
 
 .btnOutline:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 0.1px solid #555;
 }
 
 /* LINKS ------------------------------------------------- */
 a:hover {
-  color: #6d3949;
+  color: #555;
 }
