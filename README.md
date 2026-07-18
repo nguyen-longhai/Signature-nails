@@ -4,14 +4,14 @@ A website I made for a local NZ business located in Remuera, Auckland NZ called 
 
 ## Current progress in order to be completed
 
-- Font consistency
-- Aesthetics
-- About us section
-- Gallery
-- Footer
-- Quality adjustments
-- Accessibility concerns
-- Dynamic layouts for different orientations
+- Font consistency [DONE]
+- Aesthetics [DONE]
+- About us section [DONE]
+- Gallery [DONE]
+- Footer [DONE]
+- Quality adjustments [DONE]
+- Accessibility concerns [DONE]
+- Dynamic layouts for different orientations [DONE]
 
 ## Location
 
