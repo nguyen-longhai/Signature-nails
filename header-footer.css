@@ -10,16 +10,28 @@ nav {
   top: 0;
 }
 
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   height: 10rem;
-  transform: translate(-2rem, -2rem);
+  transform: translate(-2rem, -0);
   justify-self: center;
 }
 
 .navContainer {
   display: flex;
+  align-items: center;
   width: 85vw;
-  justify-content: space-around;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navToggle,
+.navToggleLabel {
+  display: none;
 }
 
 /*Links of navigation bar, excluding the call to action*/
@@ -37,6 +49,7 @@ nav {
 .navRight {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
   width: 45vw;
 }
@@ -57,6 +70,64 @@ nav {
   color: black;
 }
 
+@media only screen and (max-width: 600px) {
+  nav {
+    height: auto;
+  }
+
+  .navContainer {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .navToggleLabel {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    cursor: pointer;
+    padding: 0.35rem;
+    margin-left: auto;
+    z-index: 1000;
+  }
+
+  .navToggleLabel span {
+    display: block;
+    width: 1.6rem;
+    height: 2px;
+    background-color: #333;
+    border-radius: 1px;
+  }
+
+  .navRight {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .navToggle:checked ~ .navRight {
+    display: flex;
+  }
+
+  .navToggleLabel span {
+    background-color: #333;
+  }
+
+  .navLinks {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .navCallToAction {
+    align-self: flex-start;
+  }
+}
+
 :root {
   --nav-height: 5.5rem;
 }
@@ -64,4 +135,12 @@ nav {
 /* Applying offset to scroll targets */
 [id]:not(#contact):not(#gallery):not(#hero) {
   scroll-margin-top: var(--nav-height);
+}
+
+footer {
+  padding-bottom: 1rem;
+}
+
+footer p {
+  max-width: 90vw;
 }

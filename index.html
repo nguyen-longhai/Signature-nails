@@ -12,18 +12,30 @@
 
     <title>Signature Nails - Color Your Life, Lift Your Spirits</title>
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="about-gallery-contact.css" />
+    <link rel="stylesheet" href="services.css" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="header-footer.css" />
-    <link rel="stylesheet" href="hero.css" />
-    <link rel="stylesheet" href="services.css" />
-    <link rel="stylesheet" href="about-gallery-contact.css" />
   </head>
   <body>
     <nav>
       <div class="navContainer">
-        <a href="#heroSection">
+        <a href="#heroSection" class="logoLink">
           <img src="images/logo.png" alt="Signature Nails Logo" class="logo" />
         </a>
+
+        <input type="checkbox" id="navToggle" class="navToggle" />
+        <label
+          for="navToggle"
+          class="navToggleLabel"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
         <div class="navRight">
           <ul class="navLinks">
             <li><a href="#services">SERVICES</a></li>
@@ -441,5 +453,12 @@
         <h2>(+64) 0210-326-034</h2>
       </a>
     </section>
+
+    <footer class="center">
+      <p>
+        &copy; 2026 Signature Nails, 616 Remuera, Auckland, New Zealand. All
+        rights reserved | Built by Oscar
+      </p>
+    </footer>
   </body>
 </html>
