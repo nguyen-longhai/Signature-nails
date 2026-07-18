@@ -71,8 +71,19 @@ nav {
 }
 
 @media only screen and (max-width: 600px) {
+  .logo {
+    height: 7rem;
+    transform: translate(0rem, 0.5rem);
+  }
+
   nav {
-    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav .navRight {
+    transform: none;
   }
 
   .navContainer {
@@ -97,6 +108,8 @@ nav {
     height: 2px;
     background-color: #333;
     border-radius: 1px;
+
+    transform: translate(-1rem, 0);
   }
 
   .navRight {

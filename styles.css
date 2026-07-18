@@ -116,19 +116,4 @@ h5 {
   .priceText {
     width: 100%;
   }
-
-  a .logo {
-    height: 7rem;
-    transform: translate(-2rem, 0);
-  }
-
-  nav .navContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  nav .navRight {
-    transform: none;
-  }
 }
