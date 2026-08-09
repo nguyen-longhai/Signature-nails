@@ -1,11 +1,15 @@
 nav {
   width: 100%;
+  min-height: 5.5rem;
   height: 5.5rem;
-  background-color: #ffe6ed;
+  background-color: rgb(255, 230, 237, 0.7);
+  backdrop-filter: blur(12px);
+
   display: flex;
   justify-content: center;
+  align-items: center;
 
-  position: sticky;
+  position: fixed;
   z-index: 999;
   top: 0;
 }
@@ -16,8 +20,8 @@ nav {
 }
 
 .logo {
-  height: 10rem;
-  transform: translate(-2rem, -0);
+  height: 4.5rem;
+  transform: translate(-2rem, 0);
   justify-self: center;
 }
 
@@ -72,14 +76,15 @@ nav {
 
 @media only screen and (max-width: 600px) {
   .logo {
-    height: 7rem;
+    height: 5rem;
     transform: translate(0rem, 0.5rem);
   }
 
   nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    height: auto;
   }
 
   nav .navRight {
@@ -112,6 +117,16 @@ nav {
     transform: translate(-1rem, 0);
   }
 
+  .navToggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    opacity: 0;
+    pointer-events: all;
+  }
+
   .navRight {
     display: none;
     width: 100%;
@@ -123,6 +138,10 @@ nav {
 
   .navToggle:checked ~ .navRight {
     display: flex;
+  }
+
+  .navToggle:checked + .navToggleLabel {
+    z-index: 1000;
   }
 
   .navToggleLabel span {
@@ -142,7 +161,7 @@ nav {
 }
 
 :root {
-  --nav-height: 5.5rem;
+  --nav-height: 5rem;
 }
 
 /* Applying offset to scroll targets */

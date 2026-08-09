@@ -1,34 +1,26 @@
 /* HERO LAYOUT ------------------------------------ */
 .hero {
-  width: 90vw;
-  height: 91vh;
+  width: 100vw;
+  height: 93vh;
   margin: auto;
   padding: 2rem 0;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(0, -5%);
-  gap: 3rem;
+  justify-content: left;
+  align-items: flex-end;
+
+  background-image: url(images/Nail_product\ 1png.png);
+  background-size: cover;
 }
 
 .heroLeft {
-  width: 50vw;
-}
+  transform: translate(5vw, -5vh);
+  border-radius: 2rem;
+  backdrop-filter: blur(12px);
+  background-color: rgb(255, 230, 237, 0.7);
 
-/* HERO IMAGE ------------------------------------- */
-.heroRight {
-  width: 35vw;
-  max-width: 30rem;
-  overflow: hidden;
-  border-radius: 1rem;
-}
-
-.heroRight img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  padding: 2rem;
+  max-width: 70vw;
 }
 
 /* FONTS AND TYPOGRAPHY -----------------------------*/
@@ -63,17 +55,17 @@
 }
 
 .btnOutline {
-  border-bottom: 0.1px solid #f9eff1;
+  border-bottom: 0.1px solid transparent;
   transition:
     border-bottom 0.3s ease-in-out,
     color 0.1s ease-in-out;
 }
 
 .btnOutline:hover {
-  border-bottom: 0.1px solid #555;
+  border-bottom: 0.1px solid black;
 }
 
 /* LINKS ------------------------------------------------- */
 a:hover {
-  color: #555;
+  color: black;
 }
